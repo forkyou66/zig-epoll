@@ -19,7 +19,6 @@ const address: []const u8 = "127.0.0.1";
 const port: u16 = 4040;
 const rbuf_size: usize = 1024;
 const max_events: usize = 1024;
-const max_connections: usize = max_events * 2;
 
 fn epollCreate() !i32 {
     debug.print("[epollCreate]: creating epoll fd\n", .{});
