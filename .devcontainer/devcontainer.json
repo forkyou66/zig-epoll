@@ -1,0 +1,20 @@
+{
+  "name": "Zig 0.16.0",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ziglang.vscode-zig"
+      ],
+      "settings": {
+        "zig.zigPath": "/usr/local/bin/zig",
+        "zig.zls.path": "/usr/local/bin/zls",
+        "zig.initialSetupDone": true
+      }
+    }
+  },
+  "remoteUser": "usr",
+  "runArgs": ["--cap-add=SYS_ADMIN"]
+}
